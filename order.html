@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./public/main.css">
+    <script src="./public/order.js"></script>
+</head>
+<body>
+    <div class="sub-section">Menu</div><br>
+    <div class="grid-container" id="grid-menu">
+        <!--items from my database will be put here-->
+    </div>
+    <br>
+
+    <div id="form">Order Form</div>
+    <br>
+
+    <div class="form-container">
+        <form id="order-form">
+<!--            <label for="order">Item</label>-->
+<!--            <select id="order" name="order" required>-->
+<!--                <option selected disabled>Select an option</option>-->
+<!--            </select>-->
+<!--            <br><br>-->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="20">
+            <br><br>
+
+            <div id="item-info"></div>
+
+<!--            <label for="quantity">Quantity</label>-->
+<!--            <span><input type="number" id="quantity" name="quantity" required min="1"></span>-->
+<!--            <br><br>-->
+
+            <label>Cost: </label><span id="price">$0</span>
+            <br><br>
+
+            <input type="submit" class='button' value='Submit'>
+        </form>
+</div>
+
+</body>

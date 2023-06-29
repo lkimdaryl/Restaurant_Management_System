@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./public/main.css">
+    <script src="./public/admin.js"></script>
+</head>
+<body>
+    <div class="sub-section">Orders</div>
+    <div class="grid-container" id="grid-orders">
+        <!--orders from my database will be put here-->
+    </div>
+    <br>
+
+    <div class="sub-section">Menu</div><br>
+    <div class="grid-container" id="grid-menu">
+        <!--items from my database will be put here-->
+    </div>
+    <br>
+
+    <div class="sub-section">Change Menu</div>
+
+    <div class="form-container">
+        <span>
+            <form class="form-function" id="add_item_form">
+                <div class="form-function-title">Add Menu Item</div>
+                <br>
+
+                <label for="item-name">Name </label><br>
+                <input type="text" id="item-name" name="item-name" required>
+                <br><br>
+
+                <label for="cost">Cost:</label><br>
+                $<input type="number" step="any" id="cost" name="cost" required min="0">
+                <br><br>
+
+                <input type="submit" class='button' value='Submit'>
+            </form>
+        </span>
+
+        <span>
+            <form class="form-function" id="edit_item_form">
+                <div class="form-function-title">Edit Menu Item</div>
+                <br>
+
+                <label for="item-id">Item ID: </label><br>
+                <input type="text" id="item-id" name="item-id" required>
+                <br><br>
+
+                <label for="new-item-name">New Item Name: </label><br>
+                <input type="text" id="new-item-name" name="new-item-name" required>
+                <br><br>
+
+                <label for="new-cost">New Cost: </label><br>
+                $<input type="number" step="any" id="new-cost" name="new-cost" required min="0">
+                <br><br>
+
+                <input type="submit" class='button' value='Submit'>
+            </form>
+        </span>
+
+        <span>
+            <form class="form-function" id="remove_item_form">
+                <div class="form-function-title">Remove Menu Item</div>
+                <br>
+
+                <label for="remove-item-id">Item ID: </label><br>
+                <input type="text" id="remove-item-id" name="remove-item-id" required>
+                <br><br>
+
+                <input type="submit" class='button' value='Submit'>
+            </form>
+        </span>
+
+    </div>
+
+</body>
