@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
             order.classList.add('grid-item');
 
             order.addEventListener('click', (event) => {
+                const orderElement = event.currentTarget;
+                orderElement.classList.toggle('green');
                 fetch('/update_status', {
                     credentials: 'same-origin',
                     method: 'POST',
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(response => response.json())
                 .then(status => {
                     statusAtt.innerHTML = "Status: " + status;
+
                 })
             })
 

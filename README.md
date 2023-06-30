@@ -1,60 +1,90 @@
 # Restaurant Management System
-The Restaurant Management System is a web application built with FastAPI and MySQL that provides functionalities for managing menu items and processing orders in a restaurant. It allows users to view the menu, place orders, and perform administrative tasks such as adding, editing, and removing menu items.
+The Restaurant Management System is a web application built with FastAPI 
+and MySQL that provides functionalities for managing menu items and processing
+orders in a restaurant. It allows users to view the menu, place orders, and 
+perform administrative tasks such as adding, editing, and removing menu items.
 
-##Features
-View the menu items: Customers can browse the menu items available in the restaurant.
-Place orders: Customers can select items from the menu, provide their name and quantity, and submit orders.
-Process orders: Admin users can view and update the status of the orders (e.g., mark an order as complete).
-Manage menu items: Admin users can add new menu items, edit existing items (name and cost), and remove items from the menu.
-Technologies Used
-FastAPI: A modern, fast (high-performance) web framework for building APIs with Python.
+The following images display how the order and admin page looks like.   
+#### Order page:
+![order](imgs/order_page.JPG)
+
+#### Admin page:
+![admin](imgs/admin_page.JPG)
+## Features
+View the menu items and place orders: Customers can browse the menu items 
+available in the restaurant, and place orders by selecting the items from 
+the menu, provide their name and quantity, and submit orders.     .    
+
+Process orders: Admin users can view and update the status of the orders 
+(e.g., mark an order as complete).     
+
+Manage menu items: Admin users can add new menu items, edit existing items 
+(name and cost), and remove items from the menu.     
+
+## Technologies Used
+
+FastAPI: A modern, fast (high-performance) web framework for building APIs 
+with Python.
+
 MySQL: A popular open-source relational database management system.
+
 HTML and CSS: Used for creating the user interface of the web application.
+
 JavaScript: Used for handling dynamic interactions on the client-side.
-Installation
-Clone the repository:
 
-bash
-Copy code
-git clone <repository-url>
-Install the dependencies:
+## Installation
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up the MySQL database:
+1. Clone the repository:
+
+    ``
+    git clone <repository-url>
+    ``
+
+
+2. Make sure to have the following packages:
+   - fastapi
+   - uvicorn
+   - mysql.connector
+   - dotenv
+   
+   If you don't, run the following in the command line:
+
+   ``
+   pip install fastapi uvicorn mysql-connector-python python-dotenv
+   ``
+
+
+3. Set up the MySQL database:
 
 Make sure you have MySQL installed and running on your system.
-Create a new database called ProductItems.
-Update the database connection variables in the code (host, user, password) with your own MySQL credentials.
-Run the application:
 
-bash
-Copy code
-uvicorn main:app --reload
-Access the application in your browser:
+   - Go over to the credentials.env file, and update MYSQL_PASSWORD.
+   - Go over to the init_db.py file, and run it.
+     - This will create the necessary tables for you.
 
-Open http://localhost:8000 to access the restaurant management system.
+4. Run the application:
 
-Usage
-Visit the homepage to view the menu items and place orders.
-To access the admin panel, go to /admin and perform administrative tasks such as managing menu items and processing orders.
-API Endpoints
-GET /items: Retrieves all menu items.
-GET /orders: Retrieves all orders.
-POST /ordering: Submits an order.
-POST /update_status: Updates the status of an order.
-POST /add_item: Adds a new menu item.
-POST /edit_item: Edits an existing menu item.
-POST /remove_item: Removes a menu item.
-License
-This project is licensed under the MIT License.
+   If running from terminal, run the following command:
 
-Contributing
-Contributions are welcome! If you find any issues or would like to add new features, feel free to open a pull request.
+   ``
+   python app.py
+   ``
+   
 
-Acknowledgements
-This project was developed as a part of a restaurant management system tutorial.
+5. Access the application in your browser:
 
-Contact
-For any questions or inquiries, please contact [email protected]
+   In your web browser, type in: 
+
+   `localhost:6542/order` to access the order page, view the menu items and place orders.
+
+   `localhost:6542/admin` to access the admin page, perform administrative 
+tasks such as managing menu items and processing orders. 
+
+## API Endpoints
+GET /items: Retrieves all menu items.  
+GET /orders: Retrieves all orders.  
+POST /ordering: Submits an order.   
+POST /update_status: Updates the status of an order.  
+POST /add_item: Adds a new menu item.  
+POST /edit_item: Edits an existing menu item.   
+POST /remove_item: Removes a menu item.   

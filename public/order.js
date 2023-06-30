@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 item_id = 0;
                 item.addEventListener('click', (event)=> {
-                    add_order_item(item_name, price, item_id);
+                    add_order_to_form(item_name, price, item_id);
                     add_order_to_list(item_name, price, item_id);
                     updatePrice();
                     item_id++;
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });//end of order form event listener
 });
 
-function add_order_item(item, price, item_id){
+function add_order_to_form(item, price, item_id){
     const item_info = document.querySelector('#item-info');
     const itemContainer = document.createElement('div');
     itemContainer.classList.add('item_container');
