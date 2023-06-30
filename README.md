@@ -11,15 +11,21 @@ The following images display how the order and admin page looks like.
 #### Admin page:
 ![admin](imgs/admin_page.JPG)
 ## Features
-View the menu items and place orders: Customers can browse the menu items 
-available in the restaurant, and place orders by selecting the items from 
-the menu, provide their name and quantity, and submit orders.     .    
+- View the menu items and place orders: [Demo](https://youtu.be/TJcFTamXOVo)
 
-Process orders: Admin users can view and update the status of the orders 
-(e.g., mark an order as complete).     
+   Customers can browse the menu items available in the restaurant, and place 
+orders by selecting the items from the menu, provide their name and quantity, 
+and submit orders.
 
-Manage menu items: Admin users can add new menu items, edit existing items 
-(name and cost), and remove items from the menu.     
+
+- Process orders: [Demo](https://youtu.be/9FpUjJbRTRo)
+
+   Admin users can view and update the status of the orders (e.g., mark an order as complete).     
+
+
+- Manage menu items: [Demo](https://youtu.be/ETzMMLGTdHU)
+
+   Admin users can add new menu items, edit existing items (name and cost), and remove items from the menu.     
 
 ## Technologies Used
 
@@ -35,6 +41,8 @@ JavaScript: Used for handling dynamic interactions on the client-side.
 ## Installation
 
 1. Clone the repository:
+
+   In your IDE's terminal run the following command:
 
     ``
     git clone <repository-url>
@@ -56,9 +64,16 @@ JavaScript: Used for handling dynamic interactions on the client-side.
 
 3. Set up the MySQL database:
 
-Make sure you have MySQL installed and running on your system.
+   Make sure you have MySQL installed and running on your system.
 
-   - Go over to the credentials.env file, and update MYSQL_PASSWORD.
+   - In your IDE, create a new file and name it credentials.env
+   - In it, have the following:
+
+         MYSQL_HOST = 127.0.0.1
+         MYSQL_USER = root
+         MYSQL_PASSWORD = [Your Password]
+         MYSQL_DATABASE = ProductItems
+
    - Go over to the init_db.py file, and run it.
      - This will create the necessary tables for you.
 
