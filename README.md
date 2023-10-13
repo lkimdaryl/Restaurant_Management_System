@@ -69,9 +69,9 @@ JavaScript: Used for handling dynamic interactions on the client-side.
    - In your IDE, create a new file and name it credentials.env
    - In it, have the following:
 
-         MYSQL_HOST = 127.0.0.1
-         MYSQL_USER = root
-         MYSQL_PASSWORD = [Your Password]
+         MYSQL_HOST = 127.0.0.1       
+         MYSQL_USER = <your_mysql_username>     
+         MYSQL_PASSWORD = <your_mysql_password>  
          MYSQL_DATABASE = ProductItems
 
    - Go over to the init_db.py file, and run it.
