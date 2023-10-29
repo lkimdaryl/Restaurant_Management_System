@@ -11,19 +11,19 @@ The following images display how the order and admin page looks like.
 #### Admin page:
 ![admin](imgs/admin_page.JPG)
 ## Features
-- View the menu items and place orders: [Demo](https://youtu.be/TJcFTamXOVo)
+- View the menu items and place orders: [Demo](https://youtu.be/TJcFTamXOVo){:target="_blank"}
 
    Customers can browse the menu items available in the restaurant, and place 
 orders by selecting the items from the menu, provide their name and quantity, 
 and submit orders.
 
 
-- Process orders: [Demo](https://youtu.be/9FpUjJbRTRo)
+- Process orders: [Demo](https://youtu.be/9FpUjJbRTRo){:target="_blank"}
 
    Admin users can view and update the status of the orders (e.g., mark an order as complete).     
 
 
-- Manage menu items: [Demo](https://youtu.be/ETzMMLGTdHU)
+- Manage menu items: [Demo](https://youtu.be/ETzMMLGTdHU){:target="_blank"}
 
    Admin users can add new menu items, edit existing items (name and cost), and remove items from the menu.     
 
